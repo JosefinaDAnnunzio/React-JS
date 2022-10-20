@@ -1,4 +1,40 @@
-.App {
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar{
+  background-color: rgb(29, 180, 130);
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 5px;
+}
+
+ul{
+  display:flex; 
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 5px;
+  background-color: gray;
+}
+
+li{
+  letter-spacing: 5px;
+  color: aliceblue;
+}
+
+h1{
+  color: aliceblue;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ILC{
+  text-align: center;
+}
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +71,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
