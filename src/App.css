@@ -33,6 +33,28 @@ h1{
   text-align: center;
 }
 
+.itemList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item{
+  margin: 32px;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+
+.item:hover{
+  box-shadow: 0px 0px 12px 0.2px #ccc;
+}
+
+.links{
+  text-decoration: none;
+  color: black;
+}
 
 /* .App {
   text-align: center;

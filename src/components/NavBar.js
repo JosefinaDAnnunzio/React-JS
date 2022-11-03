@@ -1,15 +1,23 @@
+import React from "react";
 import Widget from "./Widget";
+import { Link, NavLink } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({isInHeader}) => {
     return(
         <nav className="navbar">
-            <h1>Amoblamientos Bahía</h1>
+            <h1>
+                <Link className="links" to="/">
+                    Amoblamientos Bahía
+                </Link>
+            </h1>
             <ul>
-                <li>Inicio</li>
-                <li>Productos</li>
-                <li>Nosotros</li>
-                <Widget/>
+                <NavLink className="links" to="/categoria/Cocina"> Cocina</NavLink>
+                <NavLink className="links" to="/categoria/Dormitorio">Dormitorio</NavLink>
+                <NavLink className="links" to="/categoria/Oficina">Oficina</NavLink>
             </ul>
+            <Link className="links">
+                <Widget/>
+            </Link>
         </nav>
     )
 }
