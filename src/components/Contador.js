@@ -1,12 +1,14 @@
 import {useState} from 'react';
 
-const Contador = ({ stock, onAdd }) => {
-    const [cantidad, setCantidad] = useState(0);
+const Contador = ({ stock, onAdd, initial=1 }) => {
+    const [cantidad, setCantidad] = useState(initial);
 
     const sumar = () => {
-        if (cantidad < stock) {
-            setCantidad(cantidad + 1);
-        }
+        // cantidad < stock ? setCantidad(cantidad + 1) : alert("No hay más unidades")
+        cantidad < stock && setCantidad(cantidad + 1)
+        // if (cantidad < stock) {
+        //     setCantidad(cantidad + 1);
+        // }
     };
 
     const restar = () => {
